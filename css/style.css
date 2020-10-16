@@ -1,0 +1,41 @@
+[id^="terminal_"] {
+  transition: fill 1s, transform 1s;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+[id^="terminal_"]:hover {
+  fill: red;
+  transform: scale(1.2);
+}
+[id^="stop_"] {
+  transform-origin: center;
+  transform-box: fill-box;
+}
+[id^="stop_"]:hover {
+  fill: red;
+  transform: scale(1.2);
+}
+[id^="route_"] {
+  transition: stroke 1s, stroke-width 1s;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+[id^="route_"]:hover {
+  stroke: red;
+  stroke-width: 20px;
+}
+
+[id^="popup_"] {
+  transition: opacity 0.4s;
+  opacity: 0;
+}
+.popup-open {
+  opacity: 1;
+  transition: 0.4s, fill 1s;
+  fill: red;
+}
+.active {
+  transition: stroke 1s, stroke-width 1s;
+  stroke: red;
+}
